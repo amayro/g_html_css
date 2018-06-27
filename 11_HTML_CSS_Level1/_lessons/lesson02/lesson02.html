@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+<!--ul>li*3>block_${Hello_$}*3-->
+ <ul>
+     <li>
+         <block_1>Hello_1</block_1>
+         <block_2>Hello_2</block_2>
+         <block_3>Hello_3</block_3>
+     </li>
+     <li>
+         <block_1>Hello_1</block_1>
+         <block_2>Hello_2</block_2>
+         <block_3>Hello_3</block_3>
+     </li>
+     <li>
+         <block_1>Hello_1</block_1>
+         <block_2>Hello_2</block_2>
+         <block_3>Hello_3</block_3>
+     </li>
+ </ul>
+
+ 
+<!-- ul>li*3>i{Hello_$}-->
+ <ul>
+     <li><i>Hello_1</i></li>
+     <li><i>Hello_2</i></li>
+     <li><i>Hello_3</i></li>
+ </ul>
+
+<h2>Якоря</h2> 
+<!--ссылка на якорь-->
+<!-- ul>li*3>a[href="#block_$"]{Ссылка на якорь_$} -->
+ <ul>
+     <li><a href="#block_1">Ссылка на якорь_1</a></li>
+     <li><a href="#block_2">Ссылка на якорь_2</a></li>
+     <li><a href="#block_3">Ссылка на якорь_3</a></li>
+ </ul> 
+
+ <!--сам якорь-->
+<!--(h3#block_$>lorem2^+p>lorem20)*3-->
+<h3 id="block_1">Lorem ipsum.</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, voluptatibus, atque. Et tempore, sint quisquam aperiam esse neque expedita aliquid?</p>
+<h3 id="block_2">Rerum, molestiae.</h3>
+<p>Nam qui architecto delectus aperiam, natus, eaque expedita porro saepe quam totam repellendus sequi cumque at odit, ab rerum deserunt!</p>
+<h3 id="block_3">Sequi, deserunt?</h3>
+<p>Accusamus optio amet suscipit cupiditate quaerat. Explicabo aperiam, velit libero facilis corporis, enim blanditiis labore eaque consequatur reprehenderit est nam.</p>
+ 
+
+
+ <br>
+ <br>
+ 
+ <h2>Формы</h2>
+  <form action="" >
+  <fieldset>
+   <legend> Контактные данные </legend>
+    <h3>Регистрация</h3>
+    Ваше имя <input type="text" placeholder="Иван"><br> Пароль <input type="password" placeholder="Пароль"><br> Email <input type="email" placeholder="email@mail.ru"><br> Ваш возраст <input type="number">
+    </fieldset>
+    <h4>Ваши увлечения</h4>
+    <label>
+    <input type="checkbox" checked> Sport
+  </label> <br>
+    <label>
+    <input type="checkbox" checked> IT
+  </label><br>
+    <label>
+    <input type="checkbox"> Music 
+  </label>
+    <h4>Инфо</h4>
+    Год окончания школы
+    <select>
+    <option value="2000">2000 год</option>
+    <option value="2001">2001 год</option>
+    <option value="2002">2002 год</option>
+    <option value="2003">2003 год</option>
+  </select><br> Дата рождения <input type="date"><br> Ваш пол <br>
+    <input type="radio" name="pol" checked> М<br>
+    <input type="radio" name="pol"> Ж <br>
+    
+    <h4>Ваши пожелания</h4>
+    <textarea></textarea><br>
+    <button type="submit">Любой текст, отправить</button>
+    <button type="reset">Сброс</button> <br>
+    </form>
+    <br>
+    <br>
+    
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A89b7bd408eca1fe68e7e41c0671344eeea85132065070b816f52a9eef6e7a63c&amp;source=constructor" width="500" height="439" frameborder="0"></iframe>
+    
+</body>
+</html>
+

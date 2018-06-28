@@ -1,0 +1,84 @@
+body{
+    background: #f8f8f8;
+}
+
+.menu li{
+    font-weight: bold;
+    font-family: Verdana;
+    font-size : 14px;
+    list-style-type : none;
+    text-transform : uppercase;
+}
+
+.menu li a{
+    color: cornflowerblue;
+}
+
+h1{
+    color: #7C7C7CFF;
+    text-align : center;
+    font-family: Verdana;  
+}
+
+h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3{
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background: #eaeaea;  
+}
+
+.product_name{
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.descrprod_short{
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.descrprod_full{
+    color: #484343;
+    font-size : 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align:left;
+}
+
+.descrprod_charact > li{
+    color: black;
+    font-size : 14px;
+    line-height: 30px;
+    list-style: none; 
+    background-image: url(images/icon_mark_list.png);
+    background-repeat: no-repeat;
+    background-position: 0px 8px;
+    background-size: 18px;
+    padding-left: 24px;
+}
+
+.border{
+    border: 1px solid gray;
+}
+
+.input{
+    color: midnightblue;
+    width: 200px;
+    height: 18px;
+    font-size: 14px;
+    font-style: italic; 
+}
+
+form label{
+  float: left;
+  width : 70px;    
+}
+

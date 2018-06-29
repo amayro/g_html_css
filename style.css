@@ -74,11 +74,17 @@ h3{
     width: 200px;
     height: 18px;
     font-size: 14px;
-    font-style: italic; 
+    font-style: italic;
 }
 
 form label{
-  float: left;
-  width : 70px;    
+    float: left;
+    width : 70px;
 }
 
+.h3_contact {
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 600;
+    background: cornflowerblue;
+}

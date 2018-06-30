@@ -1,19 +1,85 @@
+/*-------- Общее для всех страниц -------- */
 body{
     width: 1200px;
     margin: 0px auto;
     background: #f8f8f8;
 }
 
-.border{
-    border: 1px solid gray;
+.imageblock_main{	
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
 }
 
-.catalog{
-    width: 760px; 
-    margin: 0px auto;
+.menu li{
+    font-weight: bold;
+    font-family: Verdana;
+    font-size : 14px;
+    list-style-type : none;
+    text-transform : uppercase;
 }
 
-.catalog p{
+.menu a{
+    color: cornflowerblue;
+}
+
+.menu a:hover{
+    color: green;
+    text-decoration: underline;
+}
+
+h1 {
+    color: #7C7C7CFF;
+/*    text-align : center;*/
+    padding-left: 320px;
+    font-family: Verdana; 
+}
+
+h2{
+    text-transform: uppercase;
+    text-align: center;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    margin: 20px 0px;
+    padding: 10px;
+    background-color: beige;
+}
+
+h3{
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background: #eaeaea;  
+}
+
+header{
+    color: black;
+    font-size : 18px;
+    line-height: 24px; 
+}
+
+header a{
+    text-decoration: none;
+}
+
+header img{
+    float:left;
+    padding-right: 20px;
+}
+
+
+
+footer{
+    text-align: center;
+    border-top: 1px solid gray;
+    margin: 30px;
+    padding-top: 10px;
+}
+
+
+/*-------- Страница каталога -------- */
+.page_catalog p{
     padding-left: 15px;
     font-size: 18px;
     font-weight: 600;
@@ -21,29 +87,80 @@ body{
     background: #eaeaea; 
 }
 
+.catalog, 
+.catalog p{
+    width: 760px; 
+}
+
+.catalog {
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.catalog p{
+    margin: 30px 0px 5px;
+}
+
 .catalog img{
     margin: 15px 0px;
     width: 200px;
-    padding-left: 40px;
 }
 
-.catalog br+a{
-    padding-left: 100px;
+span a:first-child{
+    border-left: 2px solid gray;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
-.catalog br+a+a{
-    padding-left: 190px;
-    padding-right: 200px;
+span a:last-child{
+    border-right: 2px solid gray;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-.descrprod_short{
+span a{
+    color:black;
+    border:  2px solid gray;
+    border-right: 0px;
+    border-left: 0px;
+    margin: 0px -2px;
+    padding: 8px;
+    background: #eaeaea;
+    text-transform : uppercase;
+    
+}
+
+span a{
+    color:black;
+    border:  2px solid gray;
+    border-right: 0px;
+    border-left: 0px;
+    margin: 0px -2px;
+    padding: 8px;
+    background: #eaeaea;
+    text-transform : uppercase;
+    text-decoration: none;
+}
+span a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/*-------- Страница товара -------- */
+.proddescr_short{
     color: #707070;
     font-size: 14px;
     font-style: italic;
     line-height: 16px;
 }
 
-.descrprod_full{
+.proddescr_full{
     color: #484343;
     font-size : 16px;
     font-weight: 400;
@@ -51,7 +168,7 @@ body{
     text-align:left;
 }
 
-.descrprod_charact > li{
+.proddescr_charact > li{
     color: black;
     font-size : 14px;
     line-height: 30px;
@@ -63,66 +180,9 @@ body{
     padding-left: 24px;
 }
 
-form label{
-    float: left;
-    width : 70px;
-}
-
-h1{
-    color: #7C7C7CFF;
-    text-align : center;
-    font-family: Verdana;  
-}
-
-h2{
-    text-transform: uppercase;
-    text-align: center;
-}
-
-h3{
-    color: black;
-    font-size: 18px;
-    font-weight: 400;
-    background: #eaeaea;  
-}
-
-.h3_contact {
-    color: aliceblue;
-    font-size: 20px;
-    font-weight: 600;
-    background: cornflowerblue;
-}
-
-.imageblock_main{	
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
-}
-
-.imagecat_main{
+.prodimage_main{
     width: 450px;
     border: 1px solid #000;
-}
-
-.input{
-    color: midnightblue;
-    width: 200px;
-    height: 18px;
-    font-size: 14px;
-    font-style: italic;
-}
-
-.menu li{
-    font-weight: bold;
-    font-family: Verdana;
-    font-size : 14px;
-    list-style-type : none;
-    text-transform : uppercase;
-}
-
-.menu li a{
-    color: cornflowerblue;
 }
 
 .product_name{
@@ -131,6 +191,30 @@ h3{
     line-height: 24px;
 }
 
-footer{
-    text-align: center;
+
+/*-------- Страница контакты -------- */
+.page_contacts h3{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    background: skyblue;
+    padding-left: 20px
+
 }
+
+form span{
+    float: left;
+    width : 70px;
+}
+
+input[type="text"],
+input[type="email"],
+select{
+    color: midnightblue;
+    width: 200px;
+    height: 18px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+

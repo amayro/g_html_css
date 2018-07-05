@@ -42,18 +42,18 @@ a:hover{
 }
 
 h1 {
-    color: beige;
+    color: #DDEFFF;
     font-family: Verdana; 
 }
 
 h2{
     text-transform: uppercase;
     text-align: center;
-    border-top: 2px solid gray;
-    border-bottom: 2px solid gray;
+/*    border-top: 2px solid gray;*/
+/*    border-bottom: 2px solid gray;*/
     margin: 0px 0px;
     padding: 20px;
-    background-color: beige;
+    background-color: #DDEFFF;
     color: dimgray;
 }
 
@@ -64,7 +64,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: dimgray;
+    background: #4A4A4A;
 }
 
 header a:hover{
@@ -80,7 +80,7 @@ header img{
 
 footer{
     text-align: right;
-    background: #7C7C7CFF;
+    background: #4A4A4A;
     border-top: 1px solid gray;
     margin-top: 20px;
     line-height: 40px;
@@ -178,13 +178,14 @@ footer{
 }
 
 .buy:hover{
-    background: skyblue;
-    border-style: outset;
+    background: #DDEFFF;
+/*    border: 0px solid #000;*/
+/*    border-style: outset;*/
 /*    color: aqua*/
 }
 
 .buy:active{
-    background: blue;
+    background: #396C99;
     color: aliceblue;
 }
 

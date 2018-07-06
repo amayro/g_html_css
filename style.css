@@ -1,6 +1,7 @@
 /*-------- Общее для всех страниц -------- */
 body{
     background: #f8f8f8;
+    margin: 0px;
 }
 
 a{
@@ -10,10 +11,6 @@ a{
 a:hover{
     color: cornflowerblue;
     text-decoration: underline;
-}
-
-.imageblock_main{	
-    width: 1200px;
 }
 
 .menu{
@@ -49,8 +46,6 @@ h1 {
 h2{
     text-transform: uppercase;
     text-align: center;
-/*    border-top: 2px solid gray;*/
-/*    border-bottom: 2px solid gray;*/
     margin: 0px 0px;
     padding: 20px;
     background-color: #DDEFFF;
@@ -64,7 +59,9 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #4A4A4A;
+/*    background: url(images/header_image.jpg) no-repeat #4A4A4A;*/
+    position: relative;
+
 }
 
 header a:hover{
@@ -76,28 +73,42 @@ header img{
     margin: auto 30px;
 }
 
+.header_image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0px auto;
+    z-index: -1;
+}
 
 
 footer{
     text-align: right;
     background: #4A4A4A;
-    border-top: 1px solid gray;
-    margin-top: 20px;
-    line-height: 40px;
-    padding: 10px;
+    height: 60px;
+    padding: 20px;
+    margin-top: 50px;
     color: whitesmoke;
 }
 
 /*-------- Страница главная -------- */
+
+.page_main .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    margin:20px;
+}
+
 .page_main p{
     text-align: center;
 }
 
-.page_main .container{
-    width: 1200px;
-    margin: 0px auto;
+.imageblock_main{
+    width: 60%;
+    height: 60%;
 }
-
 
 /*-------- Страница каталога -------- */
 .page_catalog p{
@@ -179,9 +190,6 @@ footer{
 
 .buy:hover{
     background: #DDEFFF;
-/*    border: 0px solid #000;*/
-/*    border-style: outset;*/
-/*    color: aqua*/
 }
 
 .buy:active{
@@ -235,7 +243,6 @@ footer{
     line-height: 24px;
 }
 
-
 table, td{
     border: 1px solid #000;
     border-collapse: collapse;
@@ -273,28 +280,17 @@ tr:nth-child(3) td:first-child{
 }
 
 
-/*
-.proddescr_charact > li{
-    color: black;
-    font-size : 14px;
-    line-height: 30px;
-    list-style: none; 
-    background-image: url(images/icon_mark_list.png);
-    background-repeat: no-repeat;
-    background-position: 0px 8px;
-    background-size: 18px;
-    padding-left: 24px;
-}
-*/
-
 /*-------- Страница контакты -------- */
+.page_contacts .container{
+    margin: 0px 20px;
+}
 .page_contacts h3{
     color: black;
     font-size: 20px;
     font-weight: 600;
     background: skyblue;
-    padding-left: 20px
-
+    padding-left: 20px;
+    margin: 20px -20px;
 }
 
 form span{
@@ -322,8 +318,6 @@ input[type="text"]{
 }
 
 iframe{
-
     width: 100%;
     height: 374px;
-
 }

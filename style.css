@@ -1,8 +1,7 @@
 /*-------- Общее для всех страниц -------- */
 body{
-    width: 1200px;
-    margin: 0px auto;
     background: #f8f8f8;
+    margin: 0px;
 }
 
 a{
@@ -14,51 +13,55 @@ a:hover{
     text-decoration: underline;
 }
 
-.imageblock_main{	
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
-}
-
-.menu li{
+.menu{
     font-weight: bold;
     font-family: Verdana;
     font-size : 14px;
     list-style-type : none;
     text-transform : uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 30px;
+    padding-left: 0px;
+}
+
+.menu li{
+    padding: 5px 5px;
 }
 
 .menu a{
-    color: cornflowerblue;
+    color: whitesmoke;
 }
 
 .menu a:hover{
-    color: green;
+    color: cornflowerblue;
     text-decoration: underline;
 }
 
 h1 {
-    color: #7C7C7CFF;
-/*    text-align : center;*/
-    padding-left: 320px;
+    color: #DDEFFF;
     font-family: Verdana; 
 }
 
 h2{
     text-transform: uppercase;
     text-align: center;
-    border-top: 2px solid gray;
-    border-bottom: 2px solid gray;
-    margin: 20px 0px;
-    padding: 10px;
-    background-color: beige;
+    margin: 0px 0px;
+    padding: 20px;
+    background-color: #DDEFFF;
+    color: dimgray;
 }
 
 header{
     color: black;
+    height: 180px;
     font-size : 18px;
-    line-height: 24px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+/*    background: url(images/header_image.jpg) no-repeat #4A4A4A;*/
+    position: relative;
+
 }
 
 header a:hover{
@@ -66,19 +69,46 @@ header a:hover{
 }
 
 header img{
-    float:left;
-    padding-right: 20px;
+    width: 100px;
+    margin: auto 30px;
 }
 
+.header_image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0px auto;
+    z-index: -1;
+}
 
 
 footer{
-    text-align: center;
-    border-top: 1px solid gray;
-    margin: 30px;
-    padding-top: 10px;
+    text-align: right;
+    background: #4A4A4A;
+    height: 60px;
+    padding: 20px;
+    margin-top: 50px;
+    color: whitesmoke;
 }
 
+/*-------- Страница главная -------- */
+
+.page_main .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    margin:20px;
+}
+
+.page_main p{
+    text-align: center;
+}
+
+.imageblock_main{
+    width: 60%;
+    height: 60%;
+}
 
 /*-------- Страница каталога -------- */
 .page_catalog p{
@@ -117,30 +147,22 @@ footer{
     text-transform : uppercase;
 }
 
-.catalog, 
-.catalog p{
-    width: 760px; 
-}
 
 .catalog{
-    margin: 0px auto;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.catalog p{
-    margin: 30px 0px 5px;
-}
-
 .catalog img{
-    margin: 15px 0px;
+    margin: 15px;
     width: 200px;
 }
 
 .catalog img:hover{
     transform: scale(1.15);
     border-radius: 50px;
+    transition: all 0.5s;
 }
 
 .catalog span{
@@ -150,18 +172,41 @@ footer{
 
 
 /*-------- Страница товара -------- */
+.page_product h3{
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background: #eaeaea; 
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.buy{
+    margin: 20px 20px auto auto;
+    width: 120px;
+    height: 50px;
+    display: block;
+}
+
+.buy:hover{
+    background: #DDEFFF;
+}
+
+.buy:active{
+    background: #396C99;
+    color: aliceblue;
+}
+
+.buy+h3, .proddescr_full{
+    clear:both;
+}
+
+
 .proddescr_short p:first-letter,
 .proddescr_full p:first-letter{
     font-weight: bold;
     font-family: Courier New;
     font-size : 24px;
-}
-
-.page_product h3{
-    color: black;
-    font-size: 18px;
-    font-weight: 400;
-    background: #eaeaea;  
 }
 
 .proddescr_short{
@@ -181,12 +226,14 @@ footer{
 
 .prodimage_main{
     width: 450px;
-    outline: 2px solid gray;
+    border: 2px solid gray;
     opacity: 0.25;
+    float:left;
+    margin: 30px;
 }
 .prodimage_main:hover{
     width: 450px;
-    outline: none;
+    border: 2px solid transparent;
     opacity: 1;
 }
 
@@ -195,7 +242,6 @@ footer{
     font-weight: bold;
     line-height: 24px;
 }
-
 
 table, td{
     border: 1px solid #000;
@@ -222,7 +268,7 @@ td ul{
     padding-left: 20px;
 }
 
-tr:nth-child(1) td:first-child{
+tr:first-child td:first-child{
     text-align: center;
     font-weight: 600;
     padding: 0px 0px;
@@ -234,28 +280,17 @@ tr:nth-child(3) td:first-child{
 }
 
 
-/*
-.proddescr_charact > li{
-    color: black;
-    font-size : 14px;
-    line-height: 30px;
-    list-style: none; 
-    background-image: url(images/icon_mark_list.png);
-    background-repeat: no-repeat;
-    background-position: 0px 8px;
-    background-size: 18px;
-    padding-left: 24px;
-}
-*/
-
 /*-------- Страница контакты -------- */
+.page_contacts .container{
+    margin: 0px 20px;
+}
 .page_contacts h3{
     color: black;
     font-size: 20px;
     font-weight: 600;
     background: skyblue;
-    padding-left: 20px
-
+    padding-left: 20px;
+    margin: 20px -20px;
 }
 
 form span{
@@ -280,4 +315,9 @@ input[type="email"]:focus{
 
 input[type="text"]{
     text-transform: capitalize;
+}
+
+iframe{
+    width: 100%;
+    height: 374px;
 }

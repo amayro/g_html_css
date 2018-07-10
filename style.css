@@ -289,6 +289,15 @@ body {
 }
 
 .bbA_img,
+.bbB_img{
+    border: 1px solid transparent;
+}
+.bbB_img:hover,
+.bbA_img:hover{
+    border: 1px solid #9c9c9c;
+}
+
+.bbA_img,
 .bbA_img .poduct_text {
     width: 270px;
     height: 270px;
@@ -298,7 +307,7 @@ body {
 .bbB_img .poduct_text{
     width: 370px;
     height: 370px;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
 
 .bbC_img{

@@ -647,11 +647,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 1s;
 }
 
 .icon_soc:hover {
     transform: rotate(360deg);
-    transition: transform 1s;
 }
 
 

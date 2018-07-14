@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html,body{
+    height: 100%;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -27,6 +31,7 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    min-height: 100%;
 }
 
 .header {
@@ -781,4 +786,8 @@ input[type="email"] {
 
 .new_item{
     min-width: 550px;
+}
+
+.content {
+    flex-grow: 1;
 }
